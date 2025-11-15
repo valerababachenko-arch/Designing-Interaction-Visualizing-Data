@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Physical Computing Fall 2025</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://use.typekit.net/mbo7gxn.css"> 
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif
+  }
+body {
+  font-size:16px;
+  }
+h1 { 
+  font-size:30px;
+  }
+h2 {
+  font-size:25px;
+  }
+  h3 {
+  font-size:18px;
+  }
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;;
+}
+.w3-half img{
+  margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer
+  } */
+.w3-half img:hover{
+  opacity:1
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.w3-jumbo {
+  font-family: "elevon", sans-serif;
+font-weight: 700;
+font-style: normal;
+} 
+.w3-sidebar {
+  background-color: #ebebeba7 !important; 
+} 
+.w3-text-blue {
+  color: #191699 !important;
+} 
+.w3-text-red {
+  color: #c40505 !important;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+}
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img-container .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  border-radius: 0 0 4px 4px;
+}
+.img-container:hover .overlay {
+  opacity: 1;
+} 
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topleft" style="display:none;font-size:22px"></a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>IXD<br>DESN 30146<br>Fall 2025</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Module2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="#InClassActivity1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop 1</a> 
+    <a href="#InClassActivity2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop 2</a>
+    <a href="#Activity1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 1</a> 
+    <a href="#Activity2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 2</a>
+    <a href="#ActionResearch" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Action Research</a>
+    <a href="#Project2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 2</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-container w3-top w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header> -->
+
+<!-- 
+  if you want to link your image to a video use one of the following alt links as an example:
+
+  alt="test1Lorem ipsum dolor sit amet, consectetur adipiscing elit test1Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+  alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:220px;margin-right:20px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="default">
+    <h1 class="w3-jumbo" id="Home"><b>Module 2 Activity Research</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Weekly Activity Template</b></h1>
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Valerii Babachneko</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+  <!-- Boilerplate -->
+  <div id="Module2" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 2</b></h1>
+    <hr style="width:50px;border:5px solid #c40505" class="w3-round">
+    <h2>Module 2</h2>
+    <h3>Designing Interaction:
+Visualizing Data
+    </h3>
+  </div>
+  
+  <!-- Project 1 Photo grid (modal) -->
+  <div id="InClassActivity1" >
+    <h2>Workshop 1 Geurilla Prototyping I</h2>
+    <div class="grid">
+        <div class="img-container">
+          <img src="images/Activity2/workshop2_0.jpg" style="width:100%" onclick="onClick(this)" alt="Preparing the main cardboard pieces that will form the base and support structure for the phone holder.">
+          <div class="overlay">Step 1</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/workshop2_1.jpg" style="width:100%" onclick="onClick(this)" alt="Gluing the folded cardboard into a triangular support shape to hold the phone upright.">
+          <div class="overlay">Step 2</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/workshop2_2.jpg" style="width:100%" onclick="onClick(this)" alt="Adding additional cardboard stability pieces using a hot glue gun to strengthen the holder.">
+          <div class="overlay">Step 3</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/workshop2_3.jpg" style="width:100%" onclick="onClick(this)" alt="Placing a phone into the prototype to check the viewing angle and ensure it stands securely.">
+          <div class="overlay">Step 4</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/workshop2_4.jpg" style="width:100%" onclick="onClick(this)" alt="The completed guerrilla prototype holds both a phone and wireless earbuds, demonstrating multi-device functionality.">
+          <div class="overlay">Step 5</div>
+        </div>
+    </div>
+  </div>
+  
+  <div id="InClassActivity2" class="w3-row-padding">
+    <h2>Workshop 2 Geurilla Prototyping II</h2>
+    <div class="grid">
+        <div class="img-container">
+          <img src="images/Activity2/Activity2_1.jpg" style="width:100%" onclick="onClick(this)" alt="Initial cardboard pieces being assembled to form the structure of a small stadium tribune with two rows.">
+          <div class="overlay">Step 1</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/Activity2_2.jpg" style="width:100%" onclick="onClick(this)" alt="Creating and attaching upright seat backs where sensors would later be positioned for testing.">
+          <div class="overlay">Step 2</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/Activity2_3.jpg" style="width:100%" onclick="onClick(this)" alt="A top-down view showing the complete arrangement of seats across both rows, helping the team visualize spacing and sensor coverage.">
+          <div class="overlay">Step 3</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/Activity2_4.jpg" style="width:100%" onclick="onClick(this)" alt="Placing sensor placeholders behind each seat to understand how motion and sound data could be captured during cheering or movement.">
+          <div class="overlay">Step 4</div>
+        </div>
+         <div class="img-container">
+          <img src="images/Activity2/Activity2_5.jpg" style="width:100%" onclick="onClick(this)" alt="Displaying the full prototype with all seats and sensor positions, demonstrating how the sensors would have operated within the tribune structure.">
+          <div class="overlay">Step 5</div>
+        </div>
+      
+    </div>
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Activity1" >
+    <h2>Activity 1: My Resarch</h2>
+    <div class="grid">
+      <img src="images/Activity1/Td1.png" style="width:100%" onclick="onClick(this)" alt="A TouchDesigner tutorial demonstrating next-level interaction design, showing how complex visuals and animations can enhance digital experiences."> 
+      <img src="images/Activity1/Td2.png" style="width:100%" onclick="onClick(this)" alt="A tutorial showing how physical touch and movement can create dynamic, audio-responsive visuals—useful for understanding interactive kiosk possibilities.">
+      <img src="images/Activity1/Td3.png" style="width:100%" onclick="onClick(this)" alt="A TouchDesigner lesson focused on particle instancing and audio-reactive noise patterns, helping me understand how sound can generate expressive visuals for Crowd Charge.">
+      <img src="images/Activity1/Td4.png" style="width:100%" onclick="onClick(this)" alt="A step-by-step breakdown of how interactive installations are built using TouchDesigner nodes, showing how sound, motion, and visuals can be connected in real time.">
+      <img src="images/Activity1/Td5.png" style="width:100%" onclick="onClick(this)" alt="A tutorial on color systems and post-processing in TouchDesigner, helping me explore how to stylize visual feedback and make the fan energy display more vibrant.">
+    </div>
+  </div>
+
+  <div id="Activity2" class="w3-row-padding">
+    <h2>Activity 2: My Reearch</h2>
+    <div class="grid">
+      <img src="images/Activity1/MyR_5.jpg" style="width:100%" onclick="onClick(this)" alt="A reference photo taken at a grocery store to study the design, height, and user interaction of real self-service kiosks."> 
+      <img src="images/Activity1/MyR_1.jpg" style="width:100%" onclick="onClick(this)" alt="Gathering cardboard pieces and tools (glue gun, cutter) to begin building the kiosk model.">
+      <img src="images/Activity1/MyR_2.jpg" style="width:100%" onclick="onClick(this)" alt="Assembling the upright structure that will hold the screen and microphone area.">
+      <img src="images/Activity1/MyR_3.jpg" style="width:100%" onclick="onClick(this)" alt="Reinforcing the kiosk with small cardboard brackets to ensure stability and proper screen alignment.">
+      <img src="images/Activity1/MyR_4.jpg" style="width:100%" onclick="onClick(this)" alt="The final prototype featuring a screen placeholder, showing how the kiosk would look and function when used by fans walking toward the stadium.">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="ActionResearch" class="w3-row-padding">
+    <h2>Action Research: My Research Continued</h2>
+    <div class="grid">
+      <img src="images/Activity2/Activity1_5.jpg" style="width:100%" onclick="onClick(this)" alt="A close-up of the sensor board showing available modules, including the sound sensor we planned to test.">
+      <img src="images/Activity2/Activity1_2.jpg" style="width:100%" onclick="onClick(this)" alt="Reference image from online tutorials explaining the different sensors included in the kit.">
+      <img src="images/Activity2/Activity1_1.jpg" style="width:100%" onclick="onClick(this)" alt="Looking at an Arduino sketch that demonstrates how to read sound levels from the sound sensor.">
+      <img src="images/Activity2/Activity1_3.jpg" style="width:100%" onclick="onClick(this)" alt="Testing and editing the provided code inside the Arduino IDE to verify that the sensor works properly.">
+      <img src="images/Activity2/Activity1_4.jpg" style="width:100%" onclick="onClick(this)" alt="Real-time sound readings displayed as a graph, confirming that the Arduino successfully captures live audio levels.">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+  <!-- Boilerplate -->
+  <div id="Project2" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 2</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Project 2 Prototype</h2>
+    <p>Crowd Charge is an interactive fan energy visualizer designed to capture and amplify the excitement of live audiences. 
+    </p>
+    <img src="images/final/Prototype.jpg" style="width:100%" onclick="onClick(this)" alt="By translating real time microphone input into bold, dynamic visuals like dual vertical meters and screen shaking effects Crowd Charge turns raw sound into a shared visual experience. This prototype celebrates the power of collective emotion. It gives fans a way to see their voices come alive, transforming cheers, chants, and roars into a visual spectacle that fuels the atmosphere. Whether in a stadium or a digital space, Crowd Charge makes every shout count charging the moment with energy, unity, and hype.">
+  </div>
+  
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-grey" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <h2 id="caption"></h2>
+
+      <!-- <div id="urLink"></div> -->
+      <!-- <a id="urLink" class="container"><iframe class="responsive-iframe"></iframe></a> -->
+    <!-- </div> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+  // var captionUrl = document.getElementById("urLink");
+  // captionUrl.innerHTML = element.url;
+
+  //document.getElementById("urLink").src = element.url;
+}
+</script>
+
+</body>
+</html>
